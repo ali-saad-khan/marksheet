@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family:'Times New Roman', Times, serif;
+            letter-spacing: 1.2px;
+            background-color: rgb(0, 0, 0);
+        }
+        h1{
+            color: darkgoldenrod;
+            margin: 2cm 0 lem 0;
+            margin-top: 5%;
+            size: 50cm;
+        }
+        table{
+
+            margin-top: 10%;
+            height: 20%;
+            width: 80%;
+            margin-left: 10%;
+            text-align: center;
+            background-color: rgb(224, 240, 74);
+            border-radius: 15px;
+            padding: 0%;
+            border-collapse: collapse;
+            box-shadow: 2px 2px 10px rgb(66, 59, 4);
+            border: none;
+        }
+        table tr{
+            border: none;
+        }
+        table td{
+            padding: 20px 0;
+        }
+        table th{
+            background-color: rgb(184, 56, 56);
+            color: rgb(8, 5, 5);
+            padding: 18px 0;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <script>
+        var name=prompt("enter your name")
+        var mark1=+prompt("enter your marks of computer")
+        var mark2=+prompt("enter your marks of english")
+        var mark3=+prompt("enter your marks of chemistry")
+        var mark4=+prompt("enter your marks of urdu")
+        var mark5=+prompt("enter your marks of islamiat")
+        var totalmarks=mark1+mark2+mark3+mark4+mark5
+        var percentage=(totalmarks/500)*100
+        if(percentage>=80){
+            var grade="A+"
+        }
+        if(percentage>=70 && percentage<80){
+            var grade="A"
+        }
+        if(percentage>=60 && percentage<70){
+            var grade="B"
+        }
+        if(percentage>=50 && percentage<60){
+            var grade="C"
+        }
+        if(percentage<50){
+            var grade="fail"
+        }
+        document.write("<h1>"+"MARKSHEET"+"</h1>"+"<hr>")
+        document.write(
+            "<table border='1'>"
+                +"<tr>"
+                +"<th>"+"NAME"+"</th>"
+                +"<th>"+"SUBJECT1"+"</th>"
+                +"<th>"+"SUBJECT2"+"</th>"
+                +"<th>"+"SUBJECT3"+"</th>"
+                +"<th>"+"SUBJECT4"+"</th>"
+                +"<th>"+"SUBJECT5"+"</th>"
+                +"<th>"+"TOTAL MARKS"+"</th>"
+                +"<th>"+"PERCENTAGE"+"</th>"
+                +"<th>"+"GRADE"+"</th>"
+                +"</tr>"
+                +"<tr>"
+                +"<td>"+name+"</td>"
+                +"<td>"+mark1+"</td>"
+                +"<td>"+mark2+"</td>"
+                +"<td>"+mark3+"</td>"
+                +"<td>"+mark4+"</td>"
+                +"<td>"+mark5+"</td>"
+                +"<td>"+totalmarks+"</td>"
+                +"<td>"+percentage+"</td>"
+                +"<td>"+grade+"</td>"
+                +"</tr>" 
+                +"</table>"
+        )
+    </script>
+</body>
+</html>
